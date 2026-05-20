@@ -107,7 +107,7 @@
 <div class="section">
     <h2>Classes</h2>
     
-    <div class="term-card">
+    <div class="term-card" id="MusicalIdea">
         <span class="term-name">MusicalIdea</span><span class="type-tag">Class</span>
         <div class="meta-info">
             <span class="meta-label">Subclass of:</span> <code>frbr:Work</code>
@@ -115,7 +115,7 @@
         <div class="comment">Analogous to frbr:work, but on a local level, as an element of a larger piece. An abstract entity that refers to the musical thought behind a musical structure, especially a recurring one.</div>
     </div>
 
-    <div class="term-card">
+    <div class="term-card" id="MusicalMaterial">
         <span class="term-name">MusicalMaterial</span><span class="type-tag">Class</span>
         <div class="meta-info">
             <span class="meta-label">Subclass of:</span> <code>frbr:Expression</code>
@@ -123,7 +123,7 @@
         <div class="comment">The musical concept behind a musical Extract, independent of its various expressions in different arrangements or recordings. The realization of a MusicalIdea.</div>
     </div>
 
-    <div class="term-card">
+    <div class="term-card" id="Extract">
         <span class="term-name">Extract</span><span class="type-tag">Class</span>
         <div class="meta-info">
             <span class="meta-label">Subclass of:</span> <code>frbr:Expression</code>
@@ -131,7 +131,7 @@
         <div class="comment">A portion of music, independent of its manifestation in a particular edition, or its realization in any individual performance or media format.</div>
     </div>
 
-    <div class="term-card">
+    <div class="term-card" id="Selection">
         <span class="term-name">Selection</span><span class="type-tag">Class</span>
         <div class="meta-info">
             <span class="meta-label">Subclass of:</span> <code>frbr:Manifestation</code>
@@ -139,7 +139,7 @@
         <div class="comment">A collection of UUIDs that comprise a single musical object, at any level, within a single resource.</div>
     </div>
 
-    <div class="term-card">
+    <div class="term-card" id="absenceSelection">
         <span class="term-name">absenceSelection</span><span class="type-tag">Class</span>
         <div class="meta-info">
             <span class="meta-label">Subclass of:</span> <code>mao:Selection</code>
@@ -160,19 +160,19 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr id="setting">
                 <td><code>setting</code></td>
                 <td>MusicalMaterial</td>
                 <td>Extract</td>
                 <td>A setting of MusicalMaterial in an Extract.</td>
             </tr>
-            <tr>
+            <tr id="settingOf">
                 <td><code>settingOf</code></td>
                 <td>Extract</td>
                 <td>MusicalMaterial</td>
                 <td>The MusicalMaterial that this Extract is a setting of. (Inverse of setting)</td>
             </tr>
-            <tr>
+            <tr id="absenceQualifier">
                 <td><code>absenceQualifier</code></td>
                 <td>absenceSelection</td>
                 <td>AbsenceQualification</td>
